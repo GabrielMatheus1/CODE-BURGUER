@@ -332,7 +332,10 @@ html {
  .btns-cards button img:hover {
      transform: scale(1.3);
      filter: drop-shadow(0 0 1px #fff);
- 
+ }
+
+ .btns-cards button:active {
+     transform: translate(0, 5px);
  }
  
  hr {

@@ -12,38 +12,6 @@ btnMenu.addEventListener('click', () => {
 });
 
 
-// atualiza a pagina //
-
-window.onload = () => {
-  percorerItens();
-}
-  
-  // user, adm ou se ninguem estiver logado // 
-let logado = sessionStorage.getItem('Logado');
-
-if(logado == 'Admin') {
-  document.querySelector('.logado').innerHTML = 
-  `<a href="../ADM/adm.html">Admin</a> <h3><a href="./Login-Cadastro/login.html" id="logout">Sair</a></h3>`;
-}  else if(logado == 'Usuario') {
-  document.querySelector('.logado').innerHTML = 
-  `<a href="./cliente/carrinho-cliente.html">Usuario 1</a>  <h3><a href="./Login-Cadastro/login.html" id="logout">Sair</a></h3>`;
-  document.querySelector('.btns-carrinho').style.display = "flex";
-} else {
-
-  document.querySelector('.logado').innerHTML = 
-  `<a href="./Login-Cadastro/login.html">Login</a>`;
-}
-
-
-// logout //
-let logout = document.getElementById('logout');
-logout.addEventListener('click', () => {
-  sessionStorage.removeItem('Logado');
-  window.location.href = './Login-Cadastro/login.html';
-});
-
-
-
 
 // itens adicionados pelo adm no localStorage //
 function percorerItens() {
@@ -97,6 +65,42 @@ function percorerItens() {
       } 
     }
 }
+
+
+
+
+// atualiza a pagina //
+
+window.onload = () => {
+  percorerItens();
+}
+
+  
+  // user, adm ou se ninguem estiver logado // 
+let logado = sessionStorage.getItem('Logado');
+
+if(logado == 'Admin') {
+  document.querySelector('.logado').innerHTML = 
+  `<a href="../ADM/adm.html">Admin</a> <h3><a href="./Login-Cadastro/login.html" id="logout">Sair</a></h3>`;
+}  else if(logado == 'Usuario') {
+  document.querySelector('.logado').innerHTML = 
+  `<a href="./cliente/carrinho-cliente.html">Usuario 1</a>  <h3><a href="./Login-Cadastro/login.html" id="logout">Sair</a></h3>`;
+  document.querySelector('.btns-carrinho').style.display = "flex";
+} else {
+
+  document.querySelector('.logado').innerHTML = 
+  `<a href="./Login-Cadastro/login.html">Login</a>`;
+}
+
+
+// logout //
+let logout = document.getElementById('logout');
+logout.addEventListener('click', () => {
+  sessionStorage.removeItem('Logado');
+  window.location.href = './Login-Cadastro/login.html';
+});
+
+
 
 
 
@@ -197,8 +201,8 @@ listaCarrinho.addEventListener('click', (e) => {
 
 
 
-// finalizar compra //
 
+// finalizar compra //
 let btnFinalizar = document.getElementById('btn-finalizar');
 let totalCompra = document.getElementById('btn-carrinho');
 
@@ -210,12 +214,12 @@ btnFinalizar.addEventListener('click', () => {
     alert('Adicione itens ao carrinho para finalizar a compra');
   } else {
     let itensCarrinho = Array.from(listaCarrinho.children).map(item => {
+        
       return {
         img: item.querySelector('.imgs-cards-carrinhos').src,
         nome: item.querySelector('h3').textContent,
         valorItem: item.querySelector('.valor-item-carrinho').textContent,
-        quantidade: item.querySelector('.cont-span').textContent,
-        valorTotal: item.querySelector('.valor-item-carrinho').textContent
+        quantidade: item.querySelector('.cont-span').textContent
       };
     });
 
