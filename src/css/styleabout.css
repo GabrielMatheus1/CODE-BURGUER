@@ -84,6 +84,11 @@ img {
     letter-spacing: 2px;
 }
 
+.section-sobre {
+    display: flex;
+    flex-direction: column;
+}
+
 .section-sobre h4{
     font-size: 30px;
     margin-top: 80px;
