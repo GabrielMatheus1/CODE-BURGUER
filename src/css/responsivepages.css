@@ -80,48 +80,6 @@
    }
 
 
-   /* sobre */
-   .section-sobre {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      margin: 50px 0;
-   }
-/*    .section-sobre img {
-   	height: 170px;
-      width: 225px;
-      margin: 25px 0;
-   } */
-    .section-sobre .caixa {
-      width: 360px;
-      position: relative;
-      right: 20px;
-   }
-    .btn-voltar {
-	   right:0px;
-   }
-    .section-sobre#reverse {
-   	flex-direction: column;
-   }
-
-
-   /* login cadastro forget */
-   .logo img {
-      width: 30px;
-      height: 25px;
-   }
-
-   .remember {
-      padding: 5px;
-      gap: 20px;
-   }
-   .card-login {
-      width: 300px;
-   }
-
-
 
    ::-webkit-scrollbar {
       width: 4px;
@@ -137,13 +95,6 @@
 
 
 
-@media(max-width: 300px) {
-
-   h1{
-      background: ;
-   }
-
-}
 
 
 
@@ -240,55 +191,6 @@
 
 
 
-   /* sobre */
-   .section-sobre {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: auto;
-	margin: 50px 0;
-   }
-    .section-sobre img {
-   	height: 170px;
-  	width: 225px;
-	margin: 25px 0;
-   }
-    .section-sobre .caixa {
-	width: 500px;
-	position: relative;
-	right: 20px;
-   }
-    .btn-voltar {
-	right:-10px;
-   }
-    .section-sobre#reverse {
-	flex-direction: column;
-   }
-
-
-
-   /* login cadastro forget */
-   .logo img {
-  	width: 30px;
-  	height: 25px;
-   }
-   .main-login {
-	align-items: end;
-   }
-   .right-login {
- 	width: 100%;
-   }   
-   .remember {
-	padding: 5px;
-	gap: 30px;
-   }
-   .card-login {
-  	width: 400px;
-   }
-
-
-
    ::-webkit-scrollbar {
   	width: 4px;
    }  
@@ -380,51 +282,13 @@
 
 
 
-   /* sobre */
-   .section-sobre {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: auto;
-	margin: 50px 0;
-   }
-    .section-sobre img {
-   	height: 200px;
-  	width: 300px;
-	margin: 25px 0;
-   }
-    .section-sobre .caixa {
-	width: 700px;
-	position: relative;
-	right: 20px;
-   }
-    .btn-voltar {
-	right: -10px;
-   }
-    .section-sobre#reverse {
-	flex-direction: column;
-   } 
 
-
-
-
-   /* login cadastro forget */
-   .logo img {
-  	width: 37px;
-  	height: 28px;
-   }  
-   .remember {
-	padding: 5px;
-	gap: 30px;
-   }
-   .card-login {
-  	width: 500px;
-   }
 
 
    
 }
+
+
 
 
 
@@ -503,14 +367,6 @@
    }
 
 
-
-   .card-login {
-  	width: 600px;
-   }
-   .remember {
-	padding: 10px;
-	gap: 40px;
-   }
 
 
   
