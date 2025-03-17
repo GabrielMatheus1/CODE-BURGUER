@@ -3,7 +3,7 @@
 
    /* home */
    h1 {
-      font-size: 15px;
+      font-size: 12px;
    }
    header #topo-logo img {
 	   width:25px;
@@ -89,11 +89,11 @@
       height: auto;
       margin: 50px 0;
    }
-    .section-sobre img {
+/*    .section-sobre img {
    	height: 170px;
       width: 225px;
       margin: 25px 0;
-   }
+   } */
     .section-sobre .caixa {
       width: 360px;
       position: relative;
