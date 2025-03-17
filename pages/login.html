@@ -11,7 +11,7 @@
   </head>
   <body id="logins">
 
-    
+
     <header>
       <nav class="menu">
         <div class="logo">
@@ -23,71 +23,114 @@
       </nav>
     </header>
 
-    <!-- <div id="customAlert">Logado com Sucesso!</div> -->
+
+        <div id="form-login">
+
+                <h2>LOGIN</h2>
+
+        <div class="campo">
+                <label for="email">E-mail:(Adm:123/user-cadastrar)</label>
+                <input type="text" id="email" name="email" required>
+        </div>
 
 
-	<div id="form-login">
+        <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+        </div>
 
-		<h2>LOGIN</h2>
 
-	<div class="campo">
-		<label for="email">E-mail:(user1/admin)</label>
-		<input type="text" id="email" name="email" required>
-	</div>
-		
+        <div class="campo-btns">
+                <button id="sessao-cadastrar" onclick="sessaoCadastrar()">Cadastre-se</button>
+                <button onclick="logar()">Entrar</button>
+        </div>
 
-	<div class="campo">
-		<label for="senha">Senha:</label>
-		<input type="password" id="senha" name="senha" required>
-	</div>
-	
-	
-	<div class="campo-btns">
-		<button id="sessao-cadastrar" onclick="sessaoCadastrar()">Cadastre-se</button>
-	 	<button onclick="">Entrar</button>
-	</div>
-		
 </div>
 
 
 
-	
-		<div id="form-cadastro" class="hidden">
 
-			<h2>CADASTRO</h2>
-	
+                <div id="form-cadastro" class="hidden">
 
-		<fieldset>
+                        <h2>CADASTRO</h2>
 
-			<legend>DADOS PARA LOGIN:</legend>
 
-		<div class="campo">
-			<label for="email-cad">E-mail:</label>
-			<input type="text" id="email-cad" name="email" required>
-		</div>
-			
-	
-		<div class="campo">
-			<label for="senha-cad">Senha:</label>
-			<input type="password" id="senha-cad" name="senha" required>
-		</div>
+                <fieldset>
 
-		<div class="campo">
-			<label for="senha-cad2">Senha:</label>
-			<input type="password" id="senha-cad2" name="senha" required>
-		</div>
+                        <legend>DADOS PARA LOGIN</legend>
 
-	</fieldset>
-		
-		<div class="campo-btns">
-			<button id="btn-cadastrar-cad" onclick="">Cadastre-se</button>
-			
-		</div>
-			<p>Ja tem conta?<span id="btn-p-logar" onclick="voltarLogin()">fazer login</span></p>
-	</div>
-	
-	
+                <div class="campo">
+                        <label for="email-cad">E-mail:</label>
+                        <input type="text" id="email-cad" name="email" required>
+                </div>
 
+
+                <div class="campo">
+                        <label for="senha-cad">Senha:</label>
+                        <input type="password" id="senha-cad" name="senha" required>
+                </div>
+
+                <div class="campo">
+                        <label for="senha-cad2">Senha:</label>
+                        <input type="password" id="senha-cad2" name="senha" required>
+                </div>
+
+        </fieldset>
+                  
+        <fieldset>
+          
+            <legend>INF. PESSOAL</legend>
+                    
+                <div class="campo">
+                    <label for="nome-cad">Nome completo:</label>
+                    <input type="text" id="nome-cad" name="nome" required>
+                </div>
+
+                <div class="campo">
+                     <label for="telefone-cad">Celular:</label>
+                     <input type="number" id="teledone-cad" name="telefone" required>
+                </div>
+
+          
+                <div class="campo">
+                     <label for="data-cad">Data de nascimento:</label>
+                     <input type="date" id="data-cad" name="data-nascimento" required>
+                </div>
+    
+                  </fieldset>
+                  
+                  
+                  <fieldset>
+                    
+                    <legend>Endereço</legend>
+         
+          
+                <div class="campo">
+                     <label for="cep-cad">CEP:</label>
+                     <input type="number" id="cep-cad" name="cep" required>
+                </div>
+                    
+                         
+                <div class="campo">
+                     <label for="endereco-cad">Endereço:</label>
+                     <input type="text" id="endereco-cad" name="endereco" required>
+                </div>
+                    
+                         
+                <div class="campo">
+                     <label for="endereco-numero-cad">N°:</label>
+                     <input type="number" id="endereco-numero-cad" name="endereco-numero" required>
+                </div>
+                    
+          
+                  </fieldset>
+
+                <div class="campo-btns">
+                        <button id="btn-cadastrar-cad" onclick="">Cadastre-se</button>
+
+                </div>
+                        <p>Ja tem conta?<span id="btn-p-logar" onclick="voltarLogin()">fazer login</span></p>
+        </div>
 
     <script src="../src/js/applog.js"></script>
   </body>
