@@ -1,36 +1,24 @@
-var logins = [{
-        user: 'Adm',
-        pass: '123'
-}];
-
-let btn = document.getElementById("sessao-cadastrar");
-
-function sessaoCadastrar() {
     let formLogin = document.getElementById("form-login");
     let formCadastro = document.getElementById("form-cadastro");
 
+
+function sessaoCadastrar() {
     formLogin.style.display = "none";
     formCadastro.style.display = "flex";
 }
 
-let btnVoltarLogin = document.getElementById("voltar-login");
-
 function voltarLogin() {
-    let formLogin = document.getElementById("form-login");
-    let formCadastro = document.getElementById("form-cadastro");
-
     formLogin.style.display = "flex";
     formCadastro.style.display = "none";
 }
 
 
 
-let btnCadastrar = document.getElementById("btn-cadastrar-cad");
+var logins = [{
+        user: 'Adm',
+        pass: '123'
+}];
 
-btnCadastrar.addEventListener("click", function(event) {
-    event.preventDefault();
-    salvarCadastro();
-});
 
 function salvarCadastro() {
     let user = document.getElementById("email-cad").value;
@@ -44,16 +32,25 @@ function salvarCadastro() {
     if (pass !== pass2) {
         return alert("Senhas não conferem!");
     }
-   
+    
+    
 
     for (let i = 0; i < logins.length; i++) {
         if (user === logins[i].user) {
+            
             return alert("Usuário já cadastrado!");
         }
     }
-
-    alert("Cadastro realizado com sucesso! Faça login para continuar.");
     logins.push({ user: user, pass: pass });
+    
+    
+    formLogin.style.display = "flex";
+    formCadastro.style.display = "none";
+
+   
+    
+    alert("Cadastro realizado com sucesso! Faça login para continuar.");
+   
 }
 
 
@@ -90,9 +87,16 @@ function logar() {
     alert("Usuário ou senha incorretos!");
 }
 
+
 let btnLogin = document.getElementById("btn-login");
-btnLogin.addEventListener("click", function(event) {
-    event.preventDefault();
+btnLogin.addEventListener('click', function(event) {
     logar();
+});
+
+
+
+let btnCadastrar = document.getElementById("btn-cadastrar-cad");
+btnCadastrar.addEventListener('click', function(event) {
+    salvarCadastro();
 });
 
