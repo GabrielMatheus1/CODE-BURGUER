@@ -20,7 +20,7 @@ var logins = [{
         nome: 'gabriel',
         tip: 'ADM',
         cel: '1193022993',
-        nascimento: '12/11/2025',
+        cpf: '123123113',
         cep: '04888',
         endereco: 'slaq',
         n: '502'
@@ -30,7 +30,7 @@ var logins = [{
         nome: 'user teste',
         tip: 'USER',
         cel: 'a',
-        nascimento: 'a',
+        cpf: '123123213',
         cep: 'a',
         endereco: 'a',
         n: 'a'
@@ -43,14 +43,14 @@ function salvarCadastro() {
     let pass2 = document.getElementById("senha-cad2").value;
     let nome = document.getElementById('nome-cad').value;
     let telefone = document.getElementById('telefone-cad').value;
-    let datNasci = document.getElementById('data-nas-cad').value;
+    let cpf = document.getElementById('cpf-cad').value;
     let cep = document.getElementById('cep-cad').value;
     let ende = document.getElementById('endereco-cad').value;
     let num = document.getElementById('endereco-numero-cad').value;
     
     
     if (email === "" || pass === "" || pass2 === "" || nome === "" || telefone === "" ||
-    datNasci === "" || cep === "" || ende === "" || num === "") {
+    cpf === "" || cep === "" || ende === "" || num === "") {
         return alert("Preencha todos os campos!");
     }
 
@@ -66,18 +66,18 @@ function salvarCadastro() {
             return alert("Usuário já cadastrado!");
         }
     }
-    logins.push({ email: email, pass: pass, nome: nome, tip: "USER", cel: telefone, nascimento: datNasci,
+    logins.push({ email: email, pass: pass, nome: nome, tip: "USER", cel: telefone, cpf: cpf,
         cep: cep, endereco: ende, n: num});
     
     document.getElementById("email-cad").value = "";
     document.getElementById("senha-cad").valuec= "";
-    document.getElementById("senha-cad2").value = ""
-    document.getElementById('nome-cad').value;
-    document.getElementById('telefone-cad').value;
-    document.getElementById('data-nas-cad').value;
-    document.getElementById('cep-cad').value;
-    document.getElementById('endereco-cad').value;
-    document.getElementById('endereco-numero-cad').value;
+    document.getElementById("senha-cad2").value = "";
+    document.getElementById('nome-cad').value = "";
+    document.getElementById('telefone-cad').value = "";
+    document.getElementById('cpf-cad').value = "";
+    document.getElementById('cep-cad').value = "";
+    document.getElementById('endereco-cad').value = "";
+    document.getElementById('endereco-numero-cad').value = "";
     
     formLogin.style.display = "flex";
     formCadastro.style.display = "none";
