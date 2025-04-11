@@ -1,0 +1,237 @@
+body {
+  min-height: 500px;
+}
+
+header {
+ z-index: 10;
+}
+
+
+.logo a {
+ display: flex;
+ align-items: center;
+ text-decoration: none;
+}
+
+
+
+
+.caixa-loading-login {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.cicle-load-login {
+  filter: drop-shadow(0px 0px 3px orange);
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  animation: giro-load 2s infinite linear;
+}
+
+@keyframes giro-load {
+  0% {
+    transform: rotate(-180deg);
+  }
+}
+
+.vburguer-login {
+  width: 200px;
+  position: absolute;
+}
+
+.caixa-burger-login {
+    width: 300px;
+  height: 500px;
+  border: 2px solid green;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    box-shadow: 0 0 25px 10px green;
+  border-radius: 20px;
+  background: black;
+}
+
+.vburguer-login:nth-child(1){
+  top: -280px;
+  animation: desce-burguer-load 5s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
+.vburguer-login:nth-child(2){
+  top: -170px;
+  animation: desce-burguer-load 5s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.vburguer-login:nth-child(3){
+  top: -120px;
+  animation: desce-burguer-load 5s infinite ease-in-out;
+}
+
+
+@keyframes desce-burguer-load {
+  0%{
+  transform: translate(0, 0);
+  }
+  25%{
+  transform: translate(0, 360px);
+  }
+  50%{
+  transform: translate(0, 360px);
+  }
+  75%{
+  transform: translate(300px, 360px);
+  }
+  100%{
+  transform: translate(300px, 360px);
+  }
+}
+
+
+
+
+#form-login {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 400px;
+  height: 450px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  border: #42fd00 2px solid;
+  border-radius: 25px;
+  box-shadow: 0 0 25px 5px #42fd00;
+}
+
+#form-cadastro {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 400px;
+  padding: 100px 0 50px 0 ; 
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  border: #42fd00 2px solid;
+  border-radius: 25px;
+  box-shadow: 0 0 25px 5px #42fd00;
+}
+
+#form-login h2, #form-cadastro h2 {
+  position: absolute;
+  top: 35px;
+  font-size: 40px;
+}
+
+#form-login label, #form-cadastro label {
+  font-size: 20px;
+  color: #42fd00;
+  display: block;
+  margin: 10px;
+  font-weight: bold;
+}
+
+#form-login input {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#form-cadastro input {
+  width: 300px;
+  height: 30px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#form-login .campo-btns, #form-cadastro .campo-btns {
+  margin-top: 20px;
+  display: flex;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+#form-login button, #form-cadastro button {
+  width: 170px;
+  height: 40px;
+  margin: 10px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #42fd00;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#form-login button:active, #form-cadastro button:active {
+  transform: translate(0, 3px);
+}
+
+#btn-p-logar {
+  background: none ;
+  color: #42fd00;
+  border: #42fd00 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#btn-p-logar:hover {
+  background-color: #42fd00;
+  color: black;
+  border: black 2px solid;
+}
+
+#btn-p-logar:active {
+  background-color: #42fd00;
+  color: black;
+  border: black 2px solid;
+}
+
+#form-login button:hover, #form-cadastro button:hover {
+  background-color: black;
+  color: #42fd00;
+  border: #42fd00 2px solid;
+}
+
+
+fieldset {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #42fd00;
+  border-radius: 10px;
+}
+
+#form-cadastro legend {
+  margin: auto;
+  padding: 5px;
+  color: #42fd00;
+  font-size: 20px;
+}
