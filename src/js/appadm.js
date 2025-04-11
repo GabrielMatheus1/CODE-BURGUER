@@ -232,6 +232,6 @@ const logoutButton = document.getElementById('logoutButton');
 if (logoutButton) {
 	logoutButton.addEventListener('click', () => {
 		localStorage.removeItem('loggedUser'); 
-		window.location.href = "/pages/login.html"; 
+		window.location.href = "/CODE-BURGUER/pages/login.html"; 
 	});
 }
