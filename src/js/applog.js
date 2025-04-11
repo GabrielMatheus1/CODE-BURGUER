@@ -52,9 +52,9 @@ async function loginUser() {
                 localStorage.setItem('loggedUser', JSON.stringify(result.usuario));
 
                 if (result.usuario.tip === 'USER') {
-                    window.location.href = "/index.html"; // Redireciona para a página do usuário
+                    window.location.href = /CODE-BURGUER/index.html; // Redireciona para a página do usuário
                 } else {
-                    window.location.href = "/pages/adm.html"; // Redireciona para a página do administrador
+                    window.location.href = "/CODE-BURGUER/pages/adm.html"; // Redireciona para a página do administrador
                 }
 
                 if (loadLogin) {
@@ -66,6 +66,8 @@ async function loginUser() {
         alert('Usuarios invalido ou senha incorreta!'); // alerta de erro
     }
 }
+
+
 
 
 
@@ -146,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (logoutButton) {
         logoutButton.addEventListener('click', () => {
             localStorage.removeItem('loggedUser'); // botão sair
-            window.location.href = "/pages/login.html"; // Redireciona para a página de login 
+            window.location.href = "/CODE-BURGUER/pages/login.html"; // Redireciona para a página de login 
         });
     }
 
