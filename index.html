@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./src/imgs/icons/hamburgue-logo.png">
+  <title>< Code Burger /></title>
+  <link rel="stylesheet" href="./src/css/stylehome.css">
+  <link rel="stylesheet" href="./src/css/restallpages.css">
+  <link rel="stylesheet" href="./src/css/responsivepages.css">
+</head>
+
+<body id="topo-page-index">
+
+  <header>
+
+    <a id="topo-logo" href="#topo-page-index">
+      <div class="header-logo">
+        <img src="./src/imgs/icons/hamburgue-logo.png" alt="imagem do logo">
+        <h1>< CODE BURGER /></h1>
+      </div>
+    </a>
+
+
+    <div class="direcao-index">
+
+      <a href="#hamburger-index">
+        <h6>Hambúrguers</h6>
+      </a>
+
+      <a href="#fritas-index">
+        <h6>Acompanhamentos</h6>
+      </a>
+
+      <a href="#bebidas-index">
+        <h6>Bebidas</h6>
+      </a>
+
+      <a href="#sobremesa-index">
+        <h6>Sobremesas</h6>
+      </a>
+    </div>
+
+
+    <div class="header-login" id="menu">
+
+      <h6>Menu</h6>
+      <img src="./src/imgs/home/Vector-more.png" id="btn-menu-rotatorio">
+       
+    </div>
+
+    <div class="menu-pequeno">
+    </div>
+
+
+    <div class="carrinho-oculto hidded">
+
+      <div class="logado">        
+        <a href="./pages/login.html">Login</a>
+      </div>
+
+
+	    <br>
+
+
+      <div class="menu-pequeno">
+
+        <a href="#cards-hbs" class="nav-menu-oculto">
+          <h6>Hambúrguers</h6>
+        </a>
+
+        <a href="#cards-frits" class="nav-menu-oculto">
+          <h6>Acompanhamentos</h6>
+        </a>
+
+        <a href="#cards-bebs" class="nav-menu-oculto">
+          <h6>Bebidas</h6>
+        </a>
+
+        <a href="#cards-sobs" class="nav-menu-oculto">
+          <h6>Sobremesas</h6>
+        </a>
+     </div>
+
+     <div id="list-add-carrinho">
+
+      <!-- 
+         manter 1 item para text mesmo que seja comentado 
+ 	 items adiconados ao carrinho
+      -->
+
+	<!--
+	<div class="cards-carrinho">
+    	  <img src="./src/imgs/produtos/test1.png" class="imgs-cards-carrinhos">  
+	    <div>
+              <h3>Item 1</h3>
+              <h4 class="valor-item-carrinho">R$ 30,55</h4>
+            </div>
+	    <button onclick="calcularTotal()" class="menos-item"></button>
+            <span class="cont-span">1</span>
+            <button class="mais-item"></button>
+      </div>
+
+
+	<div class="cards-carrinho">
+	  <img src="./src/imgs/produtos/test2.png" class="imgs-cards-carrinhos">
+	    <div>
+              <h3>Item 2</h3>
+              <h4 class="valor-item-carrinho">R$ 55,99</h4>
+            </div>
+	    <button onclick="calcularTotal()" class="menos-item"></button>
+            <span class="cont-span">1</span>
+            <button class="mais-item"></button>
+      </div>
+	-->
+
+
+     </div>
+
+     <div class="btns-carrinho">
+       <button id="btn-carrinho" disabled>R$ 0,00</button>
+       <button id="btn-finalizar"  onclick="salvarCarrinho()">Finalizar <br> Compra</button>
+     </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+    <img src="./src/imgs/icons/Logo-com-nome.png" alt="imagem do logo da Empresa">
+
+    <hr>
+
+    <div class="produtos">
+
+
+	    <h2 id="hamburger-index">Hambúrguers</h2>
+      <div id="cards-hbs" class="cardapio-haburgers">
+
+	<!--  
+         manter 1 item para text mesmo que seja comentado 
+ 	 items adiconados pelo adm e exibidos como o usuario verá
+	-->
+
+
+ 	<!--
+      <div class="cards  add-item-carrinho">
+    
+      <img src="./src/imgs/produtos/test1.png" alt="Imagen do produtos inserido pelo adm" class="imgs-cards">
+      <h3>Notebook Ultrafino XYZ</h3>
+
+      <div class="descricao-cards">
+        <p>O Notebook Ultrafino XYZ é a solução perfeita para quem busca desempenho, portabilidade e design elegante em um único dispositivo. Equipado com um processador de última geração, memória RAM expansível e armazenamento SSD ultrarrápido, este notebook é ideal para profissionais, estudantes e entusiastas da tecnologia. <br> <br>
+Se você valoriza um dispositivo que combina desempenho de ponta, portabilidade e design sofisticado, o Notebook Ultrafino XYZ é a escolha ideal. Seja para uso profissional, acadêmico ou pessoal, este notebook oferece tudo o que você precisa para aumentar sua produtividade e desfrutar de entretenimento de alta qualidade.</p>
+        </div>
+        
+        <div class="btns-cards">
+        <button class="valor-item">R$ 55,90</button>
+        <button onclick="addCarinho()"><img src="./src/imgs/icons/Carrinho.png" alt="carrinho de produtos" class="btn-item-list"></button>
+       </div>
+    </div>
+	-->
+
+
+
+      </div>
+
+
+
+      <h2 id="fritas-index">Fritas e Acompanhamentos</h2>
+      <div id="cards-frits" class="cardapio-fritas">
+
+	<!--  
+         manter 1 item para text mesmo que seja comentado 
+ 	 items adiconados pelo adm e exibidos como o usuario verá
+	-->
+
+
+ 	<!--
+      <div class="cards  add-item-carrinho">
+    
+      <img src="./src/imgs/produtos/test2.png" alt="Imagen do produtos inserido pelo adm" class="imgs-cards">
+      <h3>Smartphone Hyper X20</h3>
+
+      <div class="descricao-cards">
+        <p>O Smartphone Hyper X20 é a combinação perfeita de tecnologia avançada, design elegante e desempenho robusto, proporcionando uma experiência móvel incomparável. Com uma câmera de alta resolução, bateria de longa duração e uma tela impressionante, o Hyper X20 é ideal para quem busca o melhor da tecnologia em suas mãos. <br> <br>
+Se você busca um smartphone que reúna desempenho superior, design sofisticado e tecnologia de ponta, o Hyper X20 é a escolha certa. Ideal para quem deseja capturar momentos inesquecíveis, desfrutar de uma experiência visual incrível e se manter conectado com o mundo de forma eficiente e segura.</p>
+        </div>
+        
+        <div class="btns-cards">
+        <button class="valor-item">R$ 30,55</button>
+        <button onclick="addCarinho()"><img src="./src/imgs/icons/Carrinho.png" alt="carrinho de produtos" class="btn-item-list"></button>
+       </div>
+    </div>
+	-->
+
+
+
+
+      </div>
+
+
+
+      <h2 id="bebidas-index">Bebidas</h2>
+      <div id="cards-bebs" class="cardapio-bebidas">
+      </div>
+
+
+
+      <h2 id="sobremesa-index">Sobremesas</h2>
+      <div id="cards-sobs" class="cardapio-sobremesas">
+      </div>
+ 
+
+    </div>
+
+    <hr>
+
+  </main>
+
+  
+  <footer>
+    <div class="caixa-conteudo">
+
+      <img src="./src/imgs/icons/Logo-com-nome.png" alt="logo menor">
+
+      <div class="caixa-texto-infos">
+
+        <a href="./pages/about.html">QUEM SOMOS</a>
+
+        <div class="contatos">
+          <div>
+            <img src="./src/imgs/home/logo whatsapp.png" alt="logo whatsapp">
+            <p>(11) 9 3087-6062</p>
+          </div>
+          <div>
+            <img src="./src/imgs/home/logo instagram.png" alt="logo do instagram">
+            <p>instagram</p>
+          </div>
+        </div>
+        
+        <a class="link-rodape" href="https://www.google.com.br/maps/place/Av.+Marqu%C3%AAs+de+S%C3%A3o+Vicente,+1619+-+Barra+Funda,+S%C3%A3o+Paulo+-+SP,+01139-003/@-23.5199949,-46.6788854,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef806a15a46cb:0xcae1c37fd3c1549c!8m2!3d-23.5199998!4d-46.6763105!16s%2Fg%2F11cpfmr9ry?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.347664023878!2d-46.67888542504995!3d-23.519994860073055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef806a15a46cb%3A0xcae1c37fd3c1549c!2sAv.%20Marqu%C3%AAs%20de%20S%C3%A3o%20Vicente%2C%201619%20-%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001139-003!5e0!3m2!1spt-BR!2sbr!4v1730475139862!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+          AV. MARQUÊS DE SÃO VICENTE, 1690</a>
+      </div>
+
+    </div>
+
+   <div class="final-page">
+     <p>todos os direitos reservados - 2024</p>
+     <p>imagens são apenas ilustração</p>
+   </div>
+  </footer>
+
+  <div style="position: fixed; bottom: 40px; left: 2%;">
+<script type="text/javascript" src="https://usuariosonline.s12.com.br/uo-Dy1zcB9YccWCa1B7-13-0.js"></script><br><a href="https://usuariosonline.s12.com.br/" target="_blank"><img src="https://usuariosonline.s12.com.br/selo/selo-uo.gif" alt="usuários online gratis" border="0" ></a>
+  </div>
+
+  <script src="./src/js/apphome.js"></script>
+  <script src="./src/js/applog.js"></script>
+  <script src="./src/js/appclient.js"></script>
+</body>
+
+</html>
