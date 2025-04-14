@@ -40,8 +40,8 @@ async function loginUser() {
             localStorage.setItem('loggedUser', JSON.stringify(result)); // salva o usuario logado no localstorage
             loadLogin.style.display = "flex"; // animação de carregamento
             setTimeout(() => {
-                window.location.href = "/index.html"; // Redireciona para a página inicial 
-            }, 2000);
+                window.location.href = "../index.html"; // Redireciona para a página inicial 
+            }, 3500);
         } else {
             alert('Usuário inválido ou senha incorreta!'); // alerta de erro
         }
