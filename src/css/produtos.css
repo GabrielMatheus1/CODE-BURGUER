@@ -1,0 +1,320 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+
+
+main {
+    margin: 20px 0;
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 60px;
+    justify-content: center;
+}
+
+a h6 {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    font-size: 30px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline;
+    z-index: 10;
+}
+
+a h6:hover {
+    transform: scale(1.2);
+}
+
+#add-itens, #edit-itens {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #00000055;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+#caixa-add-itens, #caixa-edit-itens {
+    position: relative;
+    width: 550px;
+    height: 600px;
+    background: #000;
+    box-shadow: 0 0 25px 5px #42fd00;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 2px solid #42fd00;
+}
+
+#add-itens:target, #edit-itens:target  {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#add-itens .menu-add-itens, #edit-itens .menu-edit-itens {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+#add-itens .menu-add-itens h2, #edit-itens .menu-edit-itens h2  {
+margin: 10px;
+letter-spacing: 2px;
+text-decoration: underline 4px;
+}
+
+#add-itens .conteudo-add-itens, #edit-itens .conteudo-edit-itens {
+    width: 100%;
+    height: 550px;
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens, #edit-itens .conteudo-edit-itens .campo-edit-itens {
+ width: 100%;
+ margin: auto;
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens img {
+    max-height: 100px;
+    min-height: 50px;
+    max-width: 100px;
+    min-width: 50px;
+    transition: transform 0.5s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens label, #edit-itens .conteudo-edit-itens label {
+color:#42fd00;
+font-weight: bold;
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens input, #edit-itens .conteudo-edit-itens input {
+width: 100%;
+border: none;
+border-bottom: 2px solid #fdb600;
+background: none;
+color: orange;
+padding: 2px 6px;
+border-radius: 20px;
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens button {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+width: 100%;
+height: 80px;
+border: none;
+border-bottom: 2px solid #fdb600;
+background: none;
+color: orange;
+padding: 5px
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens button, #edit-itens .conteudo-edit-itens button {
+width: 100%;
+padding: 20px;
+border-radius: 20px;
+border: 2px solid #fdb600;
+color: #42fd00;
+font-weight: bold;
+font-size: large;
+transition: transform 0.5s ease;
+cursor: pointer;
+background: #fdb60002;
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens button:hover, #edit-itens .conteudo-edit-itens button:hover {
+    background: rgba(4, 231, 23, 0.2) ;
+    color: #fdb600;
+}
+
+#add-itens .conteudo-add-itens .campo-add-itens button:active, .close-add-itens:active, #edit-itens .conteudo-edit-itens button:active, .close-edit-itens:active {
+transform: translate(2px, 5px);
+}
+
+.close-add-itens, .close-edit-itens {
+    background: #606061;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -8px;
+    width: 35px;
+    text-decoration: none;
+    border-radius: 12px;
+ }
+
+.close-add-itens:hover, .close-edit-itens:hover {
+    background: #b50909;
+}
+
+#add-name-prod {
+    width: 300px;
+}
+
+.menu-add-itens label {
+    color: #fdb600;
+}
+
+
+.campo-img {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.campo-add-itens #add-prod-img {
+    width: 10px;
+    border-radius: 50%;
+}
+
+
+
+.cards {
+    width: 300px;
+    height: 400px;
+    padding: 20px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #000;
+    box-shadow: 0 0 25px 5px #42fd00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+    transition: all 1s ease-in-out;
+    position: relative;
+    user-select: none;
+    border: 2px solid #42fd00;
+}
+
+.categoria-card {
+    position: absolute;
+    left: 30px;
+    font-size: 12px;
+    color: #fdb600;
+    border: 1px solid #fdb600;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.categoria-card:hover {
+    background-color: #fdb600;
+    color: black;
+}
+
+.card-add {
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.card-add:hover {
+    img {
+        transform: scale(1.1);
+    }
+    h5 {
+	transform: scale(1.1);
+    }
+  
+}
+
+.cards.card-add img {
+    transition: all 1s ease-in-out;
+    width: 150px;
+}
+
+.cards.card-add h5 {
+    font-size: 25px;
+    transition: all 1s ease-in-out;
+}
+
+.cards img {
+    min-width: 200px;
+    max-width: 270px;
+    width: 90%;
+    min-height: 150px;
+    height: auto;
+    max-height: 150px;
+    border-radius: 20px;
+}
+
+.cards h3 {
+    font-size: 22px;
+}
+
+.cards .descricao-cards {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    overflow: auto;
+    text-align: justify;
+}
+
+.btn-produtos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .btn-produtos button {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px 15px;
+    width: 90%;
+    border-radius: 20px;
+    background: rgb(255,255,255,0.5);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.cards .btn-produtos button:hover {
+    background: #fff;
+}
+
+.link-edit {
+    width: 110%;
+    color: #000;
+    text-decoration: none;
+}
+
