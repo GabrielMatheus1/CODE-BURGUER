@@ -40,7 +40,7 @@ async function loginUser() {
             localStorage.setItem('loggedUser', JSON.stringify(result)); // salva o usuario logado no localstorage
             loadLogin.style.display = "flex"; // animação de carregamento
             setTimeout(() => {
-                window.location.href = "/index.html"; // Redireciona para a página inicial 
+                window.location.href = "/CODE-BURGUER/index.html"; // Redireciona para a página inicial 
             }, 2000);
         } else {
             alert('Usuário inválido ou senha incorreta!'); // alerta de erro
